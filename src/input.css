@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navitems>li>a {
+    @apply h-12 px-4 hover:bg-gray-700 rounded-lg flex items-center gap-2
+}

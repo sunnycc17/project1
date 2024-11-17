@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link href="./src/output.css" rel="stylesheet">
+    <link rel="shortcut icon" href="https://img.icons8.com/external-others-zufarizal-robiyanto/64/external-chips-fast-food-filled-others-zufarizal-robiyanto.png">
+    <title>chibbis</title>
 </head>
-<body>
+<body class="bg-gray-100">
     <header class="flex items-center justify-between px-8 bg-gray-800 h-20 text-white sticky top-0 z-50">
         <logo>
             <a href="" class="flex items-center gap-1">
@@ -27,5 +32,36 @@
             </ul>
         </nav>
     </header>
+
+    <hero class="grid bg-gray-700 text-white text-center bg-cover bg-center bg-[url('https://cdn.pixabay.com/photo/2023/04/26/16/21/chips-7952768_1280.jpg')]">
+        <div class="col-start-1 row-start-1 bg-gray-800 bg-opacity-40 w-full h-full"></div>
+        <div class="col-start-1 row-start-1 py-24 px-10">
+            <h1>Chips Chips & more Chips!</h1>
+            <p class="text-lg font-bold mb-5">Explore our finest selections</p>
+            <a class="button" href="">Get Started</a>
+        </div>
+    </hero>
+
+    <content class="grid grid-cols-3 max-w-7xl mx-auto mt-6">
+        <main class="col-span-2 mx-[10%]">
+            <article class="card">
+                <div class="flex items-center justify-between px-4 h-14">
+                    <h3 class="text-lg font-bold w-[50%] truncate">BBQ chips</h3>
+                    <div class="text-sm text-gray-500">flickr @<a href="" class="hover:underline" target="_blank">meow</a></div>
+                </div>
+                <figure>
+                    <img class="w-full" src="https://cdn.pixabay.com/photo/2018/10/10/18/32/chips-3738001_1280.jpg" alt="bbq chips">
+                </figure>
+                <div>
+                    <a href="">
+                        <span>Like</span>
+                        <img width="24" height="24" src="https://img.icons8.com/material-outlined/24/like--v1.png" alt="like--v1"/>
+                    </a>
+                </div>
+            </article>
+        </main>
+        <aside class="col-span-1 mr-[20%] bg-red-200">sidebar</aside>
+    </content>
+
 </body>
 </html>
